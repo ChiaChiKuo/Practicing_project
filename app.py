@@ -1,5 +1,5 @@
 # 匯入 Flask 套件
-from flask import Flask
+from flask import Flask, render_template
 
 # 建立 Flask 應用程式
 app = Flask(__name__)
@@ -7,8 +7,7 @@ app = Flask(__name__)
 # 當使用者進入首頁("/")時，執行這個函式
 @app.route("/")
 def home():
-    # 回傳文字給瀏覽器
-    return "Hello Flask!"
+    return render_template("login.html")
 
 # 啟動伺服器
 if __name__ == "__main__":

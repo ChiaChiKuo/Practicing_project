@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+<title>Login</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}" type = "text/css">
+<script src = "{{ url_for('static', filename='js/login.js') }}" type = "text/javascript"></script>
+</head>
+<body>
+    <!-- 使用者登入 -->
+    登入介面
+    <div>
+        帳號<input type = "text" name = "user_id" placeholder = "帳號"/>
+    </div>
+    <div>
+        密碼<input type = "password" name = "user_password"placeholder = "密碼"/>
+    </div>
+    <div>
+        <input type = "submit"/>
+    </div>
+</body>
