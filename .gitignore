@@ -1,0 +1,9 @@
+# git push 的時候忽略一些檔案的更改(例如資料庫改來改去很容易爆錯)
+
+# 虛擬環境 (如果你有用的話)
+venv/
+.venv/
+env/
+
+# DB
+instance/ToDay.db
